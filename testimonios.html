@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonios | Isa Bellas Cosmetics</title>
+    
+    <!-- Fuentes de Fallback (Google Fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Nunito:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Hoja de Estilos -->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    <!-- Header & Navegación -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo-container">
+                <a href="index.html"><img src="assets/logo.png" alt="Isa Bellas Cosmetics Logo" class="logo"></a>
+            </div>
+            
+            <nav class="main-nav" id="nav-menu">
+                <ul>
+                    <li><a href="index.html#sobre-mi">Sobre Mí</a></li>
+                    <li><a href="index.html#estetica">Tratamientos</a></li>
+                    <li><a href="index.html#bienestar">Bienestar</a></li>
+                    <li><a href="index.html#salud">Salud</a></li>
+                    <li><a href="testimonios.html">Testimonios</a></li>
+                    <li><a href="index.html#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-right">
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/isa__bellas_cosmetics/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.tiktok.com/@isabellascosmtics" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.youtube.com/@IsaBellita-v" target="_blank" rel="noopener noreferrer" aria-label="Youtube"><i class="fab fa-youtube"></i></a>
+                </div>
+                <button class="menu-toggle" id="mobile-menu" aria-label="Abrir menú">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ============================================== -->
+        <!-- SECCIÓN: Testimonios (Videos y WhatsApp)       -->
+        <!-- ============================================== -->
+        <section id="testimonios" class="testimonials-expanded">
+            <div class="testimo-header">
+                <div class="container">
+                    <h2 class="section-title" style="margin-bottom: 0;">Historias que nos inspiran</h2>
+                </div>
+            </div>
+
+            <div class="testimo-videos relax-section">
+                <div class="container">
+                    <div class="video-grid">
+                        <div class="video-card">
+                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video Testimonio 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="video-card">
+                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video Testimonio 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimo-divider">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+
+            <div class="testimo-whatsapp">
+                <div class="container">
+                    <h3 class="subsection-title">Real Feedback</h3>
+                    <div class="masonry-grid">
+                        <div class="masonry-item" onclick="openLightbox(this)">
+                            <img src="https://via.placeholder.com/400x600/ece5dd/000000?text=WhatsApp+Chat+1" alt="Feedback WhatsApp 1">
+                        </div>
+                        <div class="masonry-item" onclick="openLightbox(this)">
+                            <img src="https://via.placeholder.com/400x500/ece5dd/000000?text=WhatsApp+Chat+2" alt="Feedback WhatsApp 2">
+                        </div>
+                        <div class="masonry-item" onclick="openLightbox(this)">
+                            <img src="https://via.placeholder.com/400x700/ece5dd/000000?text=WhatsApp+Chat+3" alt="Feedback WhatsApp 3">
+                        </div>
+                        <div class="masonry-item" onclick="openLightbox(this)">
+                            <img src="https://via.placeholder.com/400x450/ece5dd/000000?text=WhatsApp+Chat+4" alt="Feedback WhatsApp 4">
+                        </div>
+                    </div>
+                    
+                    <div class="testimo-cta">
+                        <a href="https://wa.me/message/F5QYFAC4OISHH1" class="btn-cta" target="_blank" rel="noopener noreferrer">¡Cuéntanos tu experiencia!</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lightbox Modal -->
+        <div id="lightbox" class="lightbox">
+            <span class="close-lightbox" onclick="closeLightbox()">&times;</span>
+            <img class="lightbox-content" id="lightbox-img">
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <p>&copy; 2026 Isa Bellas Cosmetics. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- WhatsApp -->
+    <a href="https://wa.me/message/F5QYFAC4OISHH1" class="whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="Contáctanos por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="./script.js"></script>
+</body>
+</html>

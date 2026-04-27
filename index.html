@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isa Bellas Cosmetics | Clínica de Cosmetología y Estética</title>
+
+    <!-- Fuentes de Fallback (Google Fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Nunito:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Hoja de Estilos -->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+    <!-- Header & Navegación (3 Columnas Flexbox) -->
+    <header class="main-header">
+        <div class="header-container">
+            <!-- Columna Izquierda: Logo -->
+            <div class="logo-container">
+                <a href="index.html"><img src="assets/logo.png" alt="Isa Bellas Cosmetics Logo" class="logo"></a>
+            </div>
+
+            <!-- Columna Centro: Navegación -->
+            <nav class="main-nav" id="nav-menu">
+                <ul>
+                    <li><a href="#sobre-mi">Sobre Mí</a></li>
+                    <li><a href="#estetica">Tratamientos</a></li>
+                    <li><a href="#bienestar">Bienestar</a></li>
+                    <li><a href="#galeria">Galería</a></li>
+                    <li><a href="testimonios.html">Testimonios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <!-- Columna Derecha: Redes Sociales -->
+            <div class="header-right">
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/isa__bellas_cosmetics/" target="_blank" rel="noopener noreferrer"
+                        aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.tiktok.com/@isabellascosmtics" target="_blank" rel="noopener noreferrer"
+                        aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.youtube.com/@IsaBellita-v" target="_blank" rel="noopener noreferrer"
+                        aria-label="Youtube"><i class="fab fa-youtube"></i></a>
+                </div>
+                <button class="menu-toggle" id="mobile-menu" aria-label="Abrir menú">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Sección Hero -->
+        <section id="inicio" class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">Despierta tu belleza natural y siéntete radiante.</h1>
+                <a href="#contacto" class="btn-cta">Agendar Cita</a>
+            </div>
+        </section>
+
+        <!-- ============================================== -->
+        <!-- SECCIÓN: Sobre Mí                              -->
+        <!-- ============================================== -->
+        <section id="sobre-mi" class="about-section">
+            <div class="container about-container">
+                <div class="about-image">
+                    <img src="assets/logo.png" alt="Isa Bellas Cosmetics" class="about-img">
+                </div>
+                <div class="about-content">
+                    <h2 class="section-title about-title">La Esencia detrás de Isa Bellas</h2>
+                    <p>En Isa Bellas Cosmetics, nos dedicamos apasionadamente a resaltar la belleza natural de cada una
+                        de nuestras clientes. Creemos firmemente que el cuidado estético va más allá de la superficie;
+                        es un compromiso profundo con tu bienestar integral, tu autoestima y tu salud.</p>
+                    <p>Nuestra clínica nace con el propósito de ofrecer tratamientos personalizados, utilizando las
+                        mejores técnicas y productos de alta gama en un ambiente de confort absoluto. Queremos que cada
+                        visita sea una experiencia transformadora.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================== -->
+        <!-- SECCIÓN 1: Estética y Belleza (Fondo Blanco)   -->
+        <!-- ============================================== -->
+        <section id="estetica" class="services-section">
+            <div class="container">
+                <h2 class="section-title">Estética y Belleza</h2>
+
+                <div class="carousel-wrapper">
+                    <button class="carousel-btn prev-btn" aria-label="Anterior"><i
+                            class="fas fa-chevron-left"></i></button>
+
+                    <div class="carousel-track-container">
+                        <ul class="carousel-track">
+                            <!-- Limpieza Facial (Hover Reveal) -->
+                            <li class="carousel-slide">
+                                <div class="service-card hover-reveal-card" onclick="this.classList.toggle('active')">
+                                    <figure class="card-image"><img src="assets/limpieza.png" alt="Limpieza Facial"
+                                            class="service-img"></figure>
+
+                                    <!-- Estado Inicial (Desktop): Título sobre la imagen -->
+                                    <div class="reveal-title">
+                                        <h3>Limpieza Facial</h3>
+                                    </div>
+
+                                    <!-- Detalles (Overlay en Desktop, Contenido debajo en Mobile) -->
+                                    <div class="reveal-overlay">
+                                        <h3 class="mobile-title">Limpieza Facial</h3>
+                                        <div class="reveal-content">
+                                            <div class="package">
+                                                <h4>Limpieza Sencilla</h4>
+                                                <p>Higiene profunda con vaporozono, extracción de comedones, alta
+                                                    frecuencia, máscara LED y sellado nutritivo con pantalla solar.</p>
+                                                <span class="price-btn">$90.000</span>
+                                            </div>
+
+                                            <div class="package">
+                                                <h4>Limpieza Profunda</h4>
+                                                <p>Incluye Limpieza Sencilla + peeling ultrasónico, masaje DLM,
+                                                    fototerapia, porcelanización y renovación con peeling de ácido.</p>
+                                                <span class="price-btn">$120.000</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- Maquillaje Profesional -->
+                            <li class="carousel-slide">
+                                <div class="service-card hover-reveal-card" onclick="this.classList.toggle('active')">
+                                    <figure class="card-image"><img src="assets/Maquillaje.jpg"
+                                            alt="Maquillaje Profesional" class="service-img"></figure>
+
+                                    <div class="reveal-title">
+                                        <h3>Maquillaje Profesional</h3>
+                                    </div>
+
+                                    <div class="reveal-overlay">
+                                        <h3 class="mobile-title">Maquillaje Profesional</h3>
+                                        <div class="reveal-content" style="text-align: justify;">
+                                            <p
+                                                style="color: #ccc; font-family: var(--font-body); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem;">
+                                                Realza tu belleza con nuestro exclusivo servicio de maquillaje
+                                                profesional, ideal para cualquier evento social.</p>
+                                            <p
+                                                style="color: #ccc; font-family: var(--font-body); font-size: 0.95rem; line-height: 1.6; margin-bottom: 2rem;">
+                                                Para garantizar el look perfecto, realizamos una o varias pruebas
+                                                previas, ajustando cada detalle a tu estilo y preferencias. Utilizamos
+                                                productos de alta calidad y máxima cobertura, asegurando un acabado
+                                                impecable y de larga duración durante toda tu celebración.</p>
+                                            <div style="text-align: center;">
+                                                <span class="price-btn">$100.000</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <!-- Depilación Láser -->
+                            <li class="carousel-slide">
+                                <div class="service-card hover-reveal-card" onclick="this.classList.toggle('active')">
+                                    <figure class="card-image"><img src="assets/depilacion-laser.jpg"
+                                            alt="Depilación Láser" class="service-img"></figure>
+
+                                    <div class="reveal-title">
+                                        <h3>Depilación Láser</h3>
+                                    </div>
+
+                                    <div class="reveal-overlay">
+                                        <h3 class="mobile-title">Depilación Láser</h3>
+                                        <div class="reveal-content" style="text-align: center;">
+                                            <p
+                                                style="color: #ccc; font-family: var(--font-body); font-size: 0.95rem; line-height: 1.6; margin-bottom: 2rem;">
+                                                Tecnología de última generación para una piel suave por más tiempo.
+                                                Consulta nuestras zonas y paquetes disponibles.</p>
+                                            <a href="https://wa.me/message/F5QYFAC4OISHH1" class="price-btn"
+                                                target="_blank" rel="noopener noreferrer">Consultar Zonas</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <!-- Depilación Cera -->
+                            <li class="carousel-slide">
+                                <div class="service-card hover-reveal-card" onclick="this.classList.toggle('active')">
+                                    <figure class="card-image"><img src="assets/depilacion-cera.png"
+                                            alt="Depilación con Cera" class="service-img"></figure>
+
+                                    <div class="reveal-title">
+                                        <h3>Depilación con Cera</h3>
+                                    </div>
+
+                                    <div class="reveal-overlay">
+                                        <h3 class="mobile-title">Depilación con Cera</h3>
+                                        <div class="reveal-content">
+                                            <ul class="price-list">
+                                                <li><span>Cejas</span> <span class="price-capsule">$10.000</span></li>
+                                                <li><span>Bigote</span> <span class="price-capsule">$10.000</span></li>
+                                                <li><span>Axilas</span> <span class="price-capsule">$17.000</span></li>
+                                                <li><span>Media pierna</span> <span class="price-capsule">$45.000</span>
+                                                </li>
+                                                <li><span>Pierna completa</span> <span
+                                                        class="price-capsule">$70.000</span></li>
+                                                <li><span>Bikini completo</span> <span
+                                                        class="price-capsule">$27.000</span></li>
+                                                <li><span>Pecho y abdomen</span> <span
+                                                        class="price-capsule">$65.000</span></li>
+                                                <li><span>Espalda</span> <span class="price-capsule">$50.000</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <!-- Reducción y Moldeo -->
+                            <li class="carousel-slide">
+                                <div class="service-card hover-reveal-card" onclick="this.classList.toggle('active')">
+                                    <figure class="card-image"><img src="assets/masajes_reductor.png"
+                                            alt="Reducción y Moldeo" class="service-img"></figure>
+
+                                    <div class="reveal-title">
+                                        <h3>Reducción y Moldeo</h3>
+                                    </div>
+
+                                    <div class="reveal-overlay">
+                                        <h3 class="mobile-title">Reducción y Moldeo</h3>
+                                        <div class="reveal-content">
+                                            <div class="package">
+                                                <h4>Paquete Estándar</h4>
+                                                <p>5 sesiones de reducción, 2 mesoterapias, 2 cavitaciones y 2
+                                                    radiofrecuencias.</p>
+                                                <span class="price-btn">$300.000</span>
+                                            </div>
+                                            <div class="package package-vip">
+                                                <h4>Paquete VIP</h4>
+                                                <p>8 masajes de reducción, 2 exfoliaciones premium, 4 mesoterapias, 4
+                                                    cavitaciones y 4 radiofrecuencias.</p>
+                                                <span class="price-btn">$400.000</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- Tonificación -->
+                            <li class="carousel-slide">
+                                <div class="service-card hover-reveal-card" onclick="this.classList.toggle('active')">
+                                    <figure class="card-image"><img src="assets/tonificacion.jpg" alt="Tonificación"
+                                            class="service-img"></figure>
+
+                                    <div class="reveal-title">
+                                        <h3>Tonificación</h3>
+                                    </div>
+
+                                    <div class="reveal-overlay">
+                                        <h3 class="mobile-title">Tonificación</h3>
+                                        <div class="reveal-content">
+                                            <div class="package">
+                                                <h4>Paquete Estándar</h4>
+                                                <p>4 masajes tonificantes, 2 mesoterapias, 2 Tensamax y 2 fajones fríos.
+                                                </p>
+                                                <span class="price-btn">$300.000</span>
+                                            </div>
+                                            <div class="package package-vip">
+                                                <h4>Paquete VIP</h4>
+                                                <p>8 masajes tonificantes, 4 mesoterapias, 5 Tensamax, 2
+                                                    radiofrecuencias y 4 fajones fríos.</p>
+                                                <span class="price-btn">$400.000</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <!-- Levantamiento de Glúteos -->
+                            <li class="carousel-slide">
+                                <div class="service-card hover-reveal-card" onclick="this.classList.toggle('active')">
+                                    <figure class="card-image"><img src="assets/gluteos.jpg"
+                                            alt="Levantamiento de Glúteos" class="service-img"></figure>
+
+                                    <div class="reveal-title">
+                                        <h3>Glúteos</h3>
+                                    </div>
+
+                                    <div class="reveal-overlay">
+                                        <h3 class="mobile-title">Glúteos</h3>
+                                        <div class="reveal-content">
+                                            <div class="package">
+                                                <h4>Paquete Estándar</h4>
+                                                <p>4 masajes de levantamiento, 2 aplicaciones de Vitamina C, 2
+                                                    corrientes rusas y 2 radiofrecuencias.</p>
+                                                <span class="price-btn">$300.000</span>
+                                            </div>
+                                            <div class="package package-vip">
+                                                <h4>Paquete VIP</h4>
+                                                <p>8 masajes de levantamiento, 4 aplicaciones de Vitamina C, 5
+                                                    corrientes rusas y 5 radiofrecuencias.</p>
+                                                <span class="price-btn">$400.000</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <button class="carousel-btn next-btn" aria-label="Siguiente"><i
+                            class="fas fa-chevron-right"></i></button>
+                </div>
+                <div class="carousel-dots"></div>
+            </div>
+        </section>
+
+        <!-- ============================================== -->
+        <!-- SECCIÓN 2: Bienestar y Salud (Fondo Crema)     -->
+        <!-- ============================================== -->
+        <section id="bienestar" class="services-section relax-section">
+            <div class="container">
+                <h2 class="section-title">Bienestar y Relajación</h2>
+
+                <div class="carousel-wrapper">
+                    <button class="carousel-btn prev-btn" aria-label="Anterior"><i
+                            class="fas fa-chevron-left"></i></button>
+
+                    <div class="carousel-track-container">
+                        <ul class="carousel-track">
+                            <!-- Masaje Descontracturante -->
+                            <li class="carousel-slide">
+                                <div class="service-card">
+                                    <figure class="card-image"><img src="assets/ventosas.png"
+                                            alt="Masaje Descontracturante" class="service-img"></figure>
+                                    <div class="card-content">
+                                        <h3>Masaje Descontracturante</h3>
+                                        <p>Masaje con uso de ventosas y de pistola masajeadora para aliviar tensiones y
+                                            contracturas musculares.</p>
+                                        <span class="price">$100.000</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- Masaje Relajación VIP -->
+                            <li class="carousel-slide">
+                                <div class="service-card">
+                                    <figure class="card-image"><img src="assets/masaje_descontracturante.png"
+                                            alt="Masaje" class="service-img"></figure>
+                                    <div class="card-content">
+                                        <h3>Masaje Relajación</h3>
+                                        <p>Masaje relajante con bambú terapia. Piedras volcánicas, pindas aromaterapia y
+                                            musicoterapia. Se trabaja todo el cuerpo: parte anterior y posterior del
+                                            cuerpo, brazos y manos. piernas y pies, facial. cuello y espalda.
+                                        </p>
+                                        <span class="price">$100.000</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- Chocolaterapia -->
+                            <li class="carousel-slide">
+                                <div class="service-card">
+                                    <figure class="card-image"><img src="assets/chocolaterapia.jpg" alt="Chocolaterapia"
+                                            class="service-img"></figure>
+                                    <div class="card-content">
+                                        <h3>Chocolaterapia</h3>
+                                        <p>Una mezcla de chocolate puro y aceites esenciales sobre tu piel. Este
+                                            tratamiento no solo hidrata y nutre profundamente, sino que también libera
+                                            endorfinas. reduciendo el estrés y la ansiedad.
+                                        </p>
+                                        <span class="price">$100.000</span>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <!-- Sueroterapia -->
+                            <li class="carousel-slide">
+                                <div class="service-card">
+                                    <figure class="card-image"><img src="assets/sueroterapia.jpg" alt="Sueroterapia"
+                                            class="service-img"></figure>
+                                    <div class="card-content">
+                                        <h3>Sueroterapia</h3>
+                                        <ul
+                                            style="text-align: left; padding-left: 20px; font-size: 0.9rem; line-height: 1.6; margin-bottom: 1.5rem; color: #555;">
+                                            <li>Megadosis de vitamina C.</li>
+                                            <li>Fortalece el sistema inmunológico.</li>
+                                            <li>Combate el envejecimiento prematuro.</li>
+                                            <li>Elimina las sustancias cancerígenas y tóxicas.</li>
+                                            <li>Antioxidante potente.</li>
+                                        </ul>
+                                        <span class="price">$95.000 + Domicilio</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <button class="carousel-btn next-btn" aria-label="Siguiente"><i
+                            class="fas fa-chevron-right"></i></button>
+                </div>
+                <div class="carousel-dots"></div>
+            </div>
+        </section>
+
+        <!-- ============================================== -->
+        <!-- SECCIÓN: Galería de Experiencias               -->
+        <!-- ============================================== -->
+        <section id="galeria" class="services-section gallery-section">
+            <div class="container">
+                <h2 class="section-title gallery-title">Galería de Experiencias</h2>
+
+                <div class="carousel-wrapper gallery-carousel">
+                    <button class="carousel-btn prev-btn" aria-label="Anterior"><i
+                            class="fas fa-chevron-left"></i></button>
+
+                    <div class="carousel-track-container">
+                        <ul class="carousel-track">
+                            <li class="carousel-slide gallery-item">
+                                <div class="gallery-img-wrapper" onclick="openLightbox(this)">
+                                    <img src="assets/limpieza.png" alt="Instalaciones 1">
+                                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                                </div>
+                            </li>
+                            <li class="carousel-slide gallery-item">
+                                <div class="gallery-img-wrapper" onclick="openLightbox(this)">
+                                    <img src="assets/Maquillaje.jpg" alt="Instalaciones 2">
+                                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                                </div>
+                            </li>
+                            <li class="carousel-slide gallery-item">
+                                <div class="gallery-img-wrapper" onclick="openLightbox(this)">
+                                    <img src="assets/depilacion-laser.jpg" alt="Instalaciones 3">
+                                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                                </div>
+                            </li>
+                            <li class="carousel-slide gallery-item">
+                                <div class="gallery-img-wrapper" onclick="openLightbox(this)">
+                                    <img src="assets/masajes_reductor.png" alt="Instalaciones 4">
+                                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                                </div>
+                            </li>
+                            <li class="carousel-slide gallery-item">
+                                <div class="gallery-img-wrapper" onclick="openLightbox(this)">
+                                    <img src="assets/masaje_descontracturante.png" alt="Instalaciones 5">
+                                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <button class="carousel-btn next-btn" aria-label="Siguiente"><i
+                            class="fas fa-chevron-right"></i></button>
+                </div>
+                <div class="carousel-dots"></div>
+            </div>
+        </section>
+
+        <!-- ============================================== -->
+        <!-- SECCIÓN: Contacto                              -->
+        <!-- ============================================== -->
+        <section id="contacto" class="contact-section">
+            <div class="container contact-container">
+                <!-- Columna Izquierda: Formulario -->
+                <div class="contact-form-wrapper">
+                    <h2 class="section-title contact-title">Agenda tu Cita</h2>
+                    <form class="contact-form" action="#" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="nombre" placeholder="Nombre completo" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="celular" placeholder="Celular" required>
+                        </div>
+                        <div class="form-group">
+                            <select name="servicio" required>
+                                <option value="" disabled selected>Servicio de interés...</option>
+                                <optgroup label="Estética y Belleza">
+                                    <option value="Limpieza Facial">Limpieza Facial</option>
+                                    <option value="Maquillaje Profesional">Maquillaje Profesional</option>
+                                    <option value="Depilación Láser">Depilación Láser</option>
+                                    <option value="Depilación con Cera">Depilación con Cera</option>
+                                    <option value="Reducción y Moldeo">Reducción y Moldeo</option>
+                                    <option value="Tonificación">Tonificación</option>
+                                    <option value="Levantamiento de Glúteos">Levantamiento de Glúteos</option>
+                                </optgroup>
+                                <optgroup label="Bienestar y Relajación">
+                                    <option value="Masaje Descontracturante">Masaje Descontracturante</option>
+                                    <option value="Masaje Relajación">Masaje Relajación</option>
+                                    <option value="Chocolaterapia">Chocolaterapia</option>
+                                    <option value="Sueroterapia">Sueroterapia</option>
+                                </optgroup>
+                                <option value="Otro">Otro tratamiento</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="mensaje" rows="4" placeholder="Déjanos tu mensaje..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Enviar Mensaje</button>
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="privacy-policy" name="privacy-policy" required>
+                            <label for="privacy-policy">Autorizo el tratamiento de datos personales de acuerdo a lo
+                                establecido en la política de tratamiento de datos personales *</label>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Columna Derecha: Info y Mapa -->
+                <div class="contact-info-wrapper">
+                    <div class="contact-details">
+                        <h3>Información de Contacto</h3>
+                        <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/message/F5QYFAC4OISHH1"
+                                target="_blank" rel="noopener noreferrer">+57 3003659639</a></p>
+                        <p><i class="fab fa-instagram"></i><a href="https://www.instagram.com/isa__bellas_cosmetics/"
+                                target="_blank" rel="noopener noreferrer">@isa__bellas_cosmetics</a> </p>
+                        <p><i class="fas fa-map-marker-alt"></i>Manrique, Medellín, Colombia</p>
+                    </div>
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.9099539377066!2d-75.55097455424476!3d6.275569309855021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4428b96e26975b%3A0xc565c69cf25140e1!2sCl.%2084c%20%23%2034-17%2C%20San%20Jose%20de%20La%20Cima%20II%2C%20Medell%C3%ADn%2C%20Manrique%2C%20Medell%C3%ADn%2C%20Antioquia%2C%20Colombia!5e0!3m2!1ses!2sus!4v1777326854791!5m2!1ses!2sus"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lightbox Modal -->
+        <div id="lightbox" class="lightbox">
+            <span class="close-lightbox" onclick="closeLightbox()">&times;</span>
+            <img class="lightbox-content" id="lightbox-img">
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <p>&copy; 2026 Isa Bellas Cosmetics. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- WhatsApp -->
+    <a href="https://wa.me/message/F5QYFAC4OISHH1" class="whatsapp-btn" target="_blank" rel="noopener noreferrer"
+        aria-label="Contáctanos por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
